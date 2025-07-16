@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 
 # Load dataset
 root_path = "root_path" #
-dataset = ESC50(root=root_path, download=True) 
+dataset = Audio(root=root_path, download=True) 
 prompt = 'this is the sound of '
 y = [prompt + x for x in dataset.classes]
 
